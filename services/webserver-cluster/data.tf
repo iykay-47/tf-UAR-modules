@@ -18,14 +18,6 @@ data "aws_subnets" "subnet-info" {
   }
 }
 
-data "aws_security_group" "test" {
-  filter
-}
-
-data "aws_security_groups" "name" {
-  default = true  
-}
-
 # Read input from database 
 
 # data "terraform_remote_state" "mysql-db" {
